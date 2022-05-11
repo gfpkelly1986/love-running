@@ -63,6 +63,7 @@ h1, h2 {
     /* masks off the edges of the re-sized image during the increase in size
      its also an alternative to clear: both; for the removal of floats. */
     overflow: hidden;
+    position: relative;
 }
 #hero-image {
     height: 600px;
@@ -75,6 +76,10 @@ h1, h2 {
     animation-fill-mode: forwards;
 }
 
+#cover-text, #cover-text h2 {
+    color: white;
+}
+
 /* creates the level of zoom for the hero-image*/
 @keyframes hero-zoom {
     from {
@@ -85,4 +90,21 @@ h1, h2 {
     }
 }
 
+#cover-text {
+    font-size: 130%;
+    font-family: Oswald, snas-serif;
+    text-transform: uppercase;
+    letter-spacing: 4px;
 
+    width: 300px;
+    height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+
+    background-color: rgba(241, 109, 107, .7);
+
+    bottom: 30px;
+    right: 150px;
+
+    position: absolute;
+}
