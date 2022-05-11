@@ -55,7 +55,34 @@ h1, h2 {
     border-bottom: 1px solid #3a3a3a;
 }
 
-section {
-    clear: both;
+/* hero image*/
+
+#hero-outer {
+    height: 600px;
+    width: 100%;
+    /* masks off the edges of the re-sized image during the increase in size
+     its also an alternative to clear: both; for the removal of floats. */
+    overflow: hidden;
 }
+#hero-image {
+    height: 600px;
+    width: 100%;
+    background: url("./images/hero-image.webp") no-repeat center center;
+
+    /*rules responsible for animation on the home page image*/
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+
+/* creates the level of zoom for the hero-image*/
+@keyframes hero-zoom {
+    from {
+        transform: scale(1.0);
+    }
+    to {
+        transform: scale(1.1);
+    }
+}
+
 
