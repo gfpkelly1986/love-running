@@ -240,6 +240,7 @@ footer {
     animation-fill-mode: forwards;
 }
 
+/* Animation for icons */
 @keyframes icon-increase {
     from {
         transform: scale(1.0);
@@ -250,7 +251,14 @@ footer {
     }
 }
 
-.gallery-section {
-    height:800px;
+/* Gallery layout styles*/
+#photos {
     clear:both;
+    line-height: 0;
+    column-count: 4;
+    column-gap: 0px;
+}
+
+#photos img {
+    width: 100%;
 }
