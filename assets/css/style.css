@@ -249,3 +249,8 @@ footer {
         border: 0.3px solid #3a3a3a;
     }
 }
+
+.gallery-section {
+    height:800px;
+    clear:both;
+}
